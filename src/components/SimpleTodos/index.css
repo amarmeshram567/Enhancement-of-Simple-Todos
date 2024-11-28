@@ -1,51 +1,74 @@
-/* Write your CSS here */
-
-.app-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffc2a0;
-    min-height: 100vh;
+.bg-container {
+  background-color: #ffc2a0;
+  min-height: 100vh;
+  background-size: cover;
+  text-align: center;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.todo-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 15px;
+}
+.heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: #e3824d;
+}
+.todo {
+  list-style-type: none;
+  width: 100%;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.input {
+  border-radius: 10px;
+  height: 35px;
+  width: 100%;
+  border-style: solid;
+  border-width: 0.2px;
+  border-color: lightgray;
+  outline: none;
+  margin-right: 15px;
+  font-size: 14px;
+  color: rgb(44, 43, 43);
+  padding: 10px;
+}
+.add-button {
+  height: 35px;
+  font-size: 16px;
+  background-color: transparent;
+  border-width: 1px;
+  color: rgb(44, 43, 43);
+  border-radius: 8px;
+  width: 100px;
+  font-family: 'Roboto';
+}
+.check-box {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+  margin-top: 8px;
 }
 
-.simple-todos-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffffff;
-    border-radius: 16px;
-    width: 90%;
-    padding: 24px;
-    margin-top: 48px;
-    margin-bottom: 48px;
-    max-width: 1110px;
+.checked-title {
+  text-decoration: line-through;
+  color: red;
 }
 
-@media screen and (min-width: 768px){
-    .simple-todos-container{
-        padding: 48px;
-        margin-top: 96px;
-        margin-bottom: 96px;
-    }
-}
-
-.heading{
-    color: #ff8542;
-    font-family: "Roboto";
-    font-size: 24px;
-    font-weight: 700;
-    margin-top: 12px;
-    margin-bottom: 16px;
-}
-
-@media screen and (min-width: 768px){
-    .heading{
-        font-size: 48px;
-        margin-top: 32px;
-        margin-bottom: 48px;
-    }
-}
-
-.todos-list{
-    padding-left: 0px;
+.list-container{
+  list-style-type: none;
 }
